@@ -1,6 +1,6 @@
 function fn() {
   var faker = Java.type('com.github.javafaker.Faker');
-  var nameGenerator = Java.type('examples.users.PatientDataGenerator');
+  var nameGenerator = Java.type('resources.patients.PatientDataGenerator');
   var env = karate.env; // get system property 'karate.env'
   karate.log('karate.env system property was:', env);
   if (!env) {

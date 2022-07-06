@@ -4,7 +4,7 @@ Feature: Create set of 30 individual patients
     """
     function(i){
       if (i == 30) return null;
-      var patientDataGenerator = Java.type('examples.users.PatientDataGenerator');
+      var patientDataGenerator = Java.type('resources.patients.PatientDataGenerator');
       var nameGenerator = new patientDataGenerator();
       return nameGenerator.humanNames();
     }
